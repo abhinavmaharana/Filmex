@@ -14,6 +14,7 @@ import CircleRating from "../../../components/circleRating/CircleRating";
 import Img from "../../../components/lazyLoadImage/Img.jsx";
 import PosterFallback from "../../../assets/no-poster.png";
 import { PlayIcon } from "../Playbtn";
+import VideoPopup from '../../../components/videoPopup/VideoPopup'
 
 // eslint-disable-next-line react/prop-types
 const DetailsBanner = ({ video, crew }) => {
@@ -205,12 +206,12 @@ const DetailsBanner = ({ video, crew }) => {
                                         )}
                                     </div>
                                 </div>
-                                {/* <VideoPopup
+                                <VideoPopup
                                     show={show}
                                     setShow={setShow}
                                     videoId={videoId}
                                     setVideoId={setVideoId}
-                                /> */}
+                                />
                             </ContentWrapper>
                         </React.Fragment>
                     )}
